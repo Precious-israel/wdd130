@@ -122,6 +122,41 @@ background-color: #6f6f6f;
     line-height: 1.5;
 }
 
+#advventure {
+    padding: 40px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.adventure-gallary {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.adventure-gallary figure {
+    flex: 1;
+    max-width: 18%;
+    text-align: center;
+}
+
+.adventure-gallary img {
+    width: 100%;
+    height: auto;
+    border-radius: 8%;
+    transition: transform 0.3s ease-in;
+}
+
+.adventure-gallary img:hover {
+    transform: scale(1.05);
+}
+
+.adventure-gallary figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #000;
+}
 .social {
     grid-column: 2;
     justify-self: flex-end;
