@@ -157,12 +157,22 @@ background-color: #6f6f6f;
     font-weight: bold;
     color: #000;
 }
+
+footer {
+    display: flex;
+    border-top: 20px 30px;
+}
+    
 .social {
     grid-column: 2;
     justify-self: flex-end;
     position: relative;
+    display: flex;
+    gap: 15px;
+
 }
 
 .social img {
-    width: 3em; ;
+    width: 3em; 
+    
 }
