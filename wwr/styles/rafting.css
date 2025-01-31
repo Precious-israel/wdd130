@@ -154,7 +154,7 @@ footer {
     display: grid;
     place-items: right;
     background-color: #e98512;
-    padding: 3% ;
+    padding: 4% ;
     text-align:justify;
 }
     
@@ -163,12 +163,15 @@ footer {
     justify-content: flex-end;
     position: absolute;
     right: 100px;
-    justify-content: space-evenly;
+    gap: 25px;
+    
 }
 
 .sociallinks img {
-    width: 100%;  
-    height: 100%;      
+    width: 90%;  
+    height: auto; 
+    justify-content: center;
+
 }
 
 
