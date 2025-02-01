@@ -55,6 +55,7 @@ header, main, footer{
 
 .hero{
     position: relative;
+    margin: 1%;
 }
 
 .hero img {
@@ -135,21 +136,26 @@ background-color: #6f6f6f;
     justify-content:center;
 }
 
+.adventures-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .adventures-gallery figure {
-    max-width: 18%;
-    display:inline-block;
+    text-align: center;
+    margin: 1%;
 }
 
 .adventures-gallery img {
     width: 100%;
-    height: auto;
-    
+    height: 150px;
+    object-fit: cover;
 }
 
 .adventures-gallery figcaption {
-    font-size: 12px;
-    font-weight: bold;
-    color: #000;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 footer {
