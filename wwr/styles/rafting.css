@@ -14,9 +14,9 @@ header {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 20px;
-    padding: 10px;
+    padding: 0.0%;
     background-color: var(--accent1-color);
-    height: 10%;
+    height: 1%;
     margin: auto;
 }
 
@@ -37,6 +37,7 @@ nav {
 
 body {
     font-family: var(--paragraph-font);
+    background-color: aqua;    
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -136,12 +137,13 @@ background-color: #6f6f6f;
 
 .adventures-gallery figure {
     max-width: 18%;
-    display: inline-block;
+    display:inline-block;
 }
 
 .adventures-gallery img {
     width: 100%;
     height: auto;
+    
 }
 
 .adventures-gallery figcaption {
@@ -153,7 +155,7 @@ background-color: #6f6f6f;
 footer {
     display: grid;
     background-color: #e98512;
-    padding: 4% ;
+    padding: 2% ;
     text-align:justify;
     align-items: center;
     gap: 20px;
@@ -165,14 +167,16 @@ footer {
     position: absolute;
     right: 150px;
     gap: 25px;
-    
 }
 
 .sociallinks img {
     width: 90%;  
     height: auto; 
     justify-content: center;
+}
 
+header, main, footer {
+    width: 100%;
 }
 
 
