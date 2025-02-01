@@ -47,7 +47,7 @@ text-decoration:none ;
 }
 
 header, main, footer{
-    max-width: auto;
+    max-width: 76%;
     margin: 0 auto;
     width: 100%;
 }
@@ -131,7 +131,7 @@ background-color: #6f6f6f;
     background-color: rgb(91, 132, 168);
     display: grid;
     grid-template-columns: repeat(5 , 2fr);
-    justify-items: auto;
+    justify-content:center;
 }
 
 .adventures-gallery figure {
@@ -152,17 +152,18 @@ background-color: #6f6f6f;
 
 footer {
     display: grid;
-    place-items: right;
     background-color: #e98512;
     padding: 4% ;
     text-align:justify;
+    align-items: center;
+    gap: 20px;
 }
     
 .sociallinks {
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    right: 100px;
+    right: 150px;
     gap: 25px;
     
 }
