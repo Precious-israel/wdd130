@@ -1,7 +1,7 @@
 :root{
-    --primary-color: hwb(253 18% 33%);
-    --secondary-color: rgb(5, 73, 100);
-    --accent1-color: #e98512;
+    --primary-color: #dbd9e4;
+    --secondary-color: hsl(0, 89%, 41%);
+    --accent1-color: hsl(177, 86%, 49%);
     --accent2-color: #d5d8d5 ; 
 
      --heading-font: 'Halant', serif;
@@ -12,7 +12,7 @@
 header {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    align-items: center;
+    align-items:center;
     gap: 20px;
     padding: 0.0%;
     background-color: var(--accent1-color);
@@ -24,31 +24,36 @@ header img {
     width: 79%;
     height: auto;
     display: flex;
+    margin: 0.5%;
 }
 
 nav {
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: space-around;
+    padding: 10;
+    margin: 10%;
+    gap: 12%;
+    left: 5%;
     font-weight: bolder;  
+    justify-content: flex-end;
 }
 
 body {
     font-family: var(--paragraph-font);
-    background-color: aqua;    
+    background-color: #f3f8f8;    
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--heading-font);
+    text-align: center;
 }
+
 a {
 text-decoration:none ;
 }
 
 header, main, footer{
-    max-width: 76%;
+    max-width: 80%;
     margin: 0 auto;
     width: 100%;
 }
@@ -60,7 +65,7 @@ header, main, footer{
 
 .hero img {
     display: block;
-    width: 100%;
+    width: 101%;
     height: auto;
 }
 
@@ -160,7 +165,7 @@ background-color: #6f6f6f;
 
 footer {
     display: grid;
-    background-color: #e98512;
+    background-color: hsl(177, 86%, 49%);
     padding: 2% ;
     text-align:justify;
     align-items: center;
@@ -181,9 +186,7 @@ footer {
     justify-content: center;
 }
 
-header, main, footer {
-    width: 100%;
-}
+
 
 
 
