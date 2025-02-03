@@ -30,7 +30,7 @@ header img {
 nav {
     display: flex;
     list-style: none;
-    padding: 10;
+    padding: 0.5%;
     margin: 10%;
     gap: 12%;
     left: 5%;
