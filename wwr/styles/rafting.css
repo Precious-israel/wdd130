@@ -68,7 +68,7 @@ footer {
     gap: 1em;
 }
 
-.tile {
+.title {
     grid-column: 1fr-1;
 
 }
@@ -297,6 +297,7 @@ footer {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    height: auto;
 }
 
 .management .member {
@@ -310,7 +311,7 @@ footer {
     padding: 5px; /* Adds padding inside the border to create spacing between image and border */
     border-radius: 12px; /* Rounds the corners for a more framed look */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D effect */
-  
+    
 }
 
 /* FOOTER SECTION */
