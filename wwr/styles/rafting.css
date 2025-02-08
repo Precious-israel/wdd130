@@ -1,18 +1,18 @@
-:root{
+:root {
     --primary-color: #dbd9e4;
     --secondary-color: hsl(0, 89%, 41%);
     --accent1-color: hsl(177, 86%, 49%);
-    --accent2-color: #d5d8d5 ; 
+    --accent2-color: #d5d8d5;
 
-     --heading-font: 'Halant', serif;
-     --paragraph-font: 'Nunito Sans', Sans-serif;
+    --heading-font: 'Halant', serif;
+    --paragraph-font: 'Nunito Sans', Sans-serif;
 
 }
 
 header {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    align-items:center;
+    align-items: center;
     gap: 20px;
     padding: 0.0%;
     background-color: var(--accent1-color);
@@ -34,31 +34,52 @@ nav {
     margin: 10%;
     gap: 12%;
     left: 5%;
-    font-weight: bolder;  
+    font-weight: bolder;
     justify-content: flex-end;
 }
 
 body {
     font-family: var(--paragraph-font);
-    background-color: #f3f8f8;    
+    background-color: #f3f8f8;
+    margin: 0;
+    padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     text-align: center;
 }
 
 a {
-text-decoration:none ;
+    text-decoration: none;
 }
 
-header, main, footer{
+header,
+main,
+footer {
     max-width: 80%;
     margin: 0 auto;
     width: 100%;
 }
 
-.hero{
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+}
+
+.tile {
+    grid-column: 1fr-1;
+
+}
+
+.centre {
+    justify-self: center;
+    text-align: center;
+
+}
+
+.hero {
     position: relative;
     margin: 1%;
 }
@@ -74,11 +95,11 @@ header, main, footer{
     top: 1rem;
     left: 50%;
     transform: translate(-50%);
-    background-color: rgba(255,255,2555, 0.4);
+    background-color: rgba(255, 255, 2555, 0.4);
     color: var(--secondary-color);
     padding: 1rem;
     font-size: 3em;
-    width:100%;
+    width: 100%;
     text-align: center;
 }
 
@@ -91,7 +112,7 @@ header, main, footer{
     right: 2rem;
     height: 30%;
     margin: 2%;
-    
+
 }
 
 .hero article img {
@@ -109,9 +130,9 @@ header, main, footer{
     font-weight: 500;
 }
 
-#history{
-padding: 40px;
-background-color: #6f6f6f;
+#history {
+    padding: 40px;
+    background-color: #6f6f6f;
 }
 
 .history-container {
@@ -125,7 +146,7 @@ background-color: #6f6f6f;
 .history-container img {
     width: 100%;
     border-radius: 8px;
-    
+
 }
 
 .history-container p {
@@ -137,8 +158,8 @@ background-color: #6f6f6f;
     text-align: center;
     background-color: rgb(91, 132, 168);
     display: grid;
-    grid-template-columns: repeat(5 , 2fr);
-    justify-content:center;
+    grid-template-columns: repeat(5, 2fr);
+    justify-content: center;
 }
 
 .adventures-gallery {
@@ -163,35 +184,161 @@ background-color: #6f6f6f;
     margin-top: 5px;
 }
 
+/* contact us styling begin*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    gap: 20px; /* Adds space between the columns */
+    margin-top: 20px;
+}
+
+.contact-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-fields {
+    margin-bottom: 10px;
+}
+
+.contact-fields label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-fields input, 
+.contact-fields select, 
+.contact-fields textarea {
+    width: 80%; /* Or set to a specific width if needed, like 80% */
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Ensures elements align properly from the left */
+    margin-left: 0; /* Removes any unintended left margin */
+}
+
+.contact-fields textarea {
+    resize: vertical; /* allows resizing vertically only */
+}
+
+.sign-up {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically center-aligns the checkbox and label */
+    margin-top: 10px; /* Adds some space above the checkbox */
+}
+
+.sign-up input[type="checkbox"] {
+    margin-right: 2px; /* Adds some space between the checkbox and label */
+}
+
+.contact-fields .submit {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-fields .submit:hover {
+    background-color: #555;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+  /* Contact information section */
+  .contact-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+/* Google Map */
+.map {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+  /* Management section */
+  .management {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.management .member {
+    width: 100%;
+    text-align: center;
+}
+
+.management .member img {
+    width: 80%; /* Adjust the size of the image */
+    border: 8px solid #333; /* Adds a thicker border, resembling a frame */
+    padding: 5px; /* Adds padding inside the border to create spacing between image and border */
+    border-radius: 12px; /* Rounds the corners for a more framed look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D effect */
+  
+}
+
+/* FOOTER SECTION */
 footer {
     display: grid;
     background-color: hsl(177, 86%, 49%);
-    padding: 2% ;
-    text-align:justify;
+    padding: 2%;
+    text-align: justify;
     align-items: center;
     gap: 20px;
+
 }
-    
+
+footer a {
+    color: #f3f8f8;
+}
+
 .sociallinks {
     display: flex;
     justify-content: flex-end;
     position: absolute;
     right: 150px;
     gap: 25px;
+    
 }
 
 .sociallinks img {
-    width: 90%;  
-    height: auto; 
+    width: 90%;
+    height: auto;
     justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-    
+}  
