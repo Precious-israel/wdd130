@@ -231,12 +231,10 @@ footer {
     border-radius: 5px;
     display: block; /* Ensures elements align properly from the left */
     margin-left: 0; /* Removes any unintended left margin */
-}
-
-.contact-fields textarea {
     resize: vertical; /* allows resizing vertically only */
 }
 
+   
 .sign-up {
     display: flex; /* Enables flexbox layout */
     align-items: center; /* Vertically center-aligns the checkbox and label */
