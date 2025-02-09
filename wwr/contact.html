@@ -35,6 +35,7 @@
                 <div class="contact-form">
                     <h1>Contact Us</h1>
                     <fieldset class="contact-fields">
+                      <form>
                         <label for="name"> User Name:</label>
                         <input type="text" id="name" name=" required">
                         <label for="email">E-Mail:</label>
@@ -43,16 +44,19 @@
                         <label for="reason">Reason for contacting us?</label>
                         <select name="reason" id="reason">
                             <option value="general">General Inquiry</option>
+                            <label><input type="radio" name="reason"></label>
                             <option value="reservation">Reservation Question</option>
+                            <label><input type="radio" name="reason"></label>
                             <option value="suggestion">Website Suggestion</option>
                         </select>
-                        <label for="content" id="conten"></label>
-                        <textarea name="comment;" cols="35" rows="10"></textarea>
+                        <label for="content" >Content:</label>
+                        <textarea id="comment" name="content" cols="35" rows="10"></textarea>
                         <div class="sign up">
+                            <label class="checkbox">
                             <input type="checkbox" name="subscribe" id="newsletter">
                             <label for="newsletter">Please subcribe for the monthly newsletter</label>
                         </div>
-
+                      </form>
                     </fieldset>
                     <button type="submit" class="submit">Send Message</button>
 
