@@ -68,10 +68,6 @@ footer {
     gap: 1em;
 }
 
-.title {
-    grid-column: 1fr-1;
-
-}
 
 .centre {
     justify-self: center;
@@ -304,17 +300,19 @@ footer {
 }
     
 
-.management .member {
+ .member {
     width: 100%;
     text-align: center;
+    object-fit: cover;
 }
 
- .member.management img {
-    width: 80%; /* Adjust the size of the image */
+ .member img {
+    width: 70%; /* Adjust the size of the image */
     border: 8px solid #333; /* Adds a thicker border, resembling a frame */
     padding: 5px; /* Adds padding inside the border to create spacing between image and border */
     border-radius: 12px; /* Rounds the corners for a more framed look */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D effect */
+    justify-content: space-around;
     
 }
 
