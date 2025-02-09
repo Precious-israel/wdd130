@@ -294,6 +294,13 @@ footer {
     height: auto;
     text-align: center;
 }
+
+.management figure img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
 .h3 {
     width: 100%;
     text-align: center;
@@ -303,7 +310,7 @@ footer {
  .member {
     width: 100%;
     text-align: center;
-    object-fit: cover;
+    
 }
 
  .member img {
@@ -313,6 +320,7 @@ footer {
     border-radius: 12px; /* Rounds the corners for a more framed look */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D effect */
     justify-content: space-around;
+    
     
 }
 
