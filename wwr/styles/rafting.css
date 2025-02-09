@@ -272,13 +272,13 @@ footer {
 }
 
   /* Contact information section */
-  .contact-info {
+  .company-info {
     background-color: #f4f4f4;
     padding: 20px;
     box-sizing: border-box;
 }
 
-.contact-info h2 {
+.company-info h2 {
     margin-bottom: 20px;
 }
 
@@ -296,6 +296,11 @@ footer {
     justify-content: space-around;
     margin-top: 20px;
     height: auto;
+    text-align: center;
+}
+.h3 {
+    width: 100%;
+    
 }
 
 .management .member {

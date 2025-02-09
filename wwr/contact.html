@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
         <img src="images/logo.png" alt="super hero">
@@ -25,69 +27,75 @@
         </nav>
 
     </header>
+    <main>
+        <div class="container">
+            <div class="main-content">
 
-    <div class="container">
-        <div class="main-content">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h1>Contact Us</h1>
+                    <form action="submit_form.php" menthod="post">
+                        <fieldset class="contact-fields">
+                            <label for="name"> User Name:</label>
+                            <input type="text" id="name" name=" required">
+                            <label for="email">E-Mail:</label>
+                            <input type="email" id="email" name ="email">
+                            <label><input type="radio" name="reason"></label>
+                            <label for="reason">Reason for contacting us?</label>
+                            <select name="reason" id="reason">
+                                <option value="general">General Inquiry</option>
+                                <option value="reservation">Reservation Question</option>
+                                <option value="suggestion">Website Suggestion</option>
+                            </select>
+                            <label for="content">We appreciate your feedback and request</label>
+                            <textarea name="comment;" cols="35" rows="10"></textarea>
+                            <div class="sign up">
+                                <input type="checkbox" name="subscribe" id="newsletter">
+                                <label for="newsletter">Please subcribe for the monthly newsletter</label>
+                            </div>
 
-            <!-- Contact Form -->
-             <div class="contact-form">
-                <h1>Contact Us</h1>
-                <form action="#">
-                    <fieldset class="contact-fields">
-                        <label for="name"> User Name:</label>
-                        <input type="text" id="name" name="from">
-                        <label for="email">E-Mail</label>
-                        <input type="email" name="email" id="email">
-                        <label for="reason">Reason for contacting us?</label>
-                        <select name="reason" id="reason">
-                            <option value="general">General Inquiry</option>
-                            <option value="reservation">Reservation Question</option>
-                            <option value="suggestion">Website Suggestion</option>
-                        </select>
-                        <label for="content">We appreciate your feedback and request</label>
-                        <textarea name="comment;" cols="35" rows="10"></textarea>
-                        <div class="sign up">
-                            <input type="checkbox" name="subscribe" id="newsletter">
-                            <label for="newsletter">Please subcribe for the monthly newsletter</label>
-                        </div>
-    
-                    </fieldset>
-                    <button type="submit" class="submit">Send Message</button>
-                </form>
-             </div>
-
-             <!-- Contact Information -->
-              <div class="contact-info">
-                <h2>Contact Information</h2>
-                <div class="map">
-                    <!-- Embed Google Map here -->
-                    <iframe src="https://www.google.com/maps/embed?pb=..." width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </fieldset>
+                        <button type="submit" class="submit">Send Message</button>
+                    </form>
                 </div>
-                <address>30 Jubril Fasanya St, Lekki, ID 23402</address>
-                <a href="tel:234803573366">(234)-803-837-3366</a>
-                <a href="enquiry@waterrafting.org">enquiry@waterrafting.org</a>
-              </div>
-        </div>
-         <!-- Management Team -->
-         <div class="management">
-            <div class="member">
-                <figure><img src="images/funke.jpg" alt="CEO">
-                    <figcaption> Oluwafunke Israel-CEO</figcaption>
-                </figure>
-            </div>
-            <div class="member">
-                <figure><img src="images/israel.jpg" alt="COO">
-                    <figcaption> Oluwadamilola Caris-COO</figcaption>
-                </figure>
-            </div>
-            <div class="member">
-                <figure><img src="images/preciuos.jpg" alt="GMD">
-                    <figcaption> Precious Treasure-GMD</figcaption>
-                </figure>
-            </div>
-           </div>
-    </div>
 
+                <!-- Contact Information -->
+                <div class="company-info">
+                    <h2>Company Information</h2>
+                    <div class="map">
+                        <!-- Embed Google Map here -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26513.248484819273!2d3.402329539512606!3d6.445642747533413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sng!4v1739088548175!5m2!1sen!2sng"
+                            width="400" height="200" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <address>30 Jubril Fasanya St, Lekki, ID 23402</address>
+                    <a href="tel:234803573366">(234)-803-837-3366</a>
+                    <a href="enquiry@waterrafting.org">enquiry@waterrafting.org</a>
+                </div>
+            </div>
+            <!-- Management Team -->
+            <div class="management">
+                <h3> Meet Our Management Team</h3>
+
+                <div class="member">
+                    <figure><img src="images/funke.jpg" alt="CEO">
+                        <figcaption> Oluwafunke Israel-CEO</figcaption>
+                    </figure>
+                </div>
+                <div class="member">
+                    <figure><img src="images/israel.jpg" alt="COO">
+                        <figcaption> Oluwadamilola Caris-COO</figcaption>
+                    </figure>
+                </div>
+                <div class="member">
+                    <figure><img src="images/preciuos.jpg" alt="GMD">
+                        <figcaption> Precious Treasure-GMD</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <p>© 2025 |White Water Rafting Comapany| OJO Israel | Lagos,Nigeria.</p>
@@ -105,4 +113,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
