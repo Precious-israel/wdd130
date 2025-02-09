@@ -321,7 +321,6 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D effect */
     justify-content: space-around;
     
-    
 }
 
 /* FOOTER SECTION */
@@ -336,7 +335,7 @@ footer {
 }
 
 footer a {
-    color: #f3f8f8;
+    color: hwb(180 10% 86%);
 }
 
 .sociallinks {
