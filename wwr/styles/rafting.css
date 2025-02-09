@@ -300,15 +300,16 @@ footer {
 }
 .h3 {
     width: 100%;
-    
+    text-align: center;
 }
+    
 
 .management .member {
     width: 100%;
     text-align: center;
 }
 
-.management .member img {
+ .member.management img {
     width: 80%; /* Adjust the size of the image */
     border: 8px solid #333; /* Adds a thicker border, resembling a frame */
     padding: 5px; /* Adds padding inside the border to create spacing between image and border */
