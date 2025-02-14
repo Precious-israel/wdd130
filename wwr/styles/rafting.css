@@ -412,7 +412,7 @@ footer a {
 .about-item img {
     width: 100%;
     object-fit: cover;
-    height: auto;
+    height: 70%;
 }
 
 /* Trips Grid Layout */
@@ -429,7 +429,7 @@ footer a {
 
 .trip img {
     width: 100%;
-    height: auto;
+    height: 70%;
     border-radius: 5px;
 }
 
